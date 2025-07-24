@@ -1,0 +1,161 @@
+/* selectores de etiqueta */
+
+ul { /* selectores de etiqueta */
+    background-color: black;
+}
+.small {
+    font-size: 14px;
+}
+
+.text-center { /* selectores de clase */
+    text-align: center;
+}
+
+#top-songs { /* selectores de id */
+    font-style: italic;
+}
+
+/*
+*{  selectores universal 
+    border: 1px solid red;
+}*/
+
+.small.text-center{ /* selectores compuestos */
+    line-height: 15px;
+}
+
+p.text-center{ /* selectores compuestos etiqueta*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h3 { /* selectores de grupo */
+    text-align: center;
+}
+
+ul li{ /* selectores de descendiente */
+    list-style-type: none ;
+    color: white;
+}
+
+#footer, #header{
+    background-color: black;
+}
+
+/* selectores de descendiente directos */
+#header > h2, #footer p{
+    color: white;
+}
+
+li:hover{
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+tr:nth-child(even){
+    background-color: rgb(213, 210, 210);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#footer a:visited{
+    color: white;
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+#header h2{
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+#header ul{
+    display: flex;
+    margin: 0;
+}
+
+#table{
+    width: 50%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    width: 48%;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 6px;
+
+}
+
+.artist{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+}
+
+#social-media{
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+}
+#social-media a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+#social-media p{
+    margin: 0;
+}
+
+#presentation{
+    height: 500px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation *{
+    color: white;
+}
+
+#presentation h1{
+    font-size: 50 px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
